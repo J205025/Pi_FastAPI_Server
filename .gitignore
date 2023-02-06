@@ -1,0 +1,10 @@
+*.mp3
+*.MP3
+*.m3u
+*.txt
+*.swp
+.venv/
+/static/assets
+*.pyc
+__pycache__
+
