@@ -1,0 +1,413 @@
+[2023-03-20 23:29:59 +0800] [2452] [DEBUG] Current configuration:
+  config: gunicorn_cfg.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Pi_FastAPI_Server
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/Pi_FastAPI_Server/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/Pi_FastAPI_Server/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: fast:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0xffff7f3a0670>
+  on_reload: <function OnReload.on_reload at 0xffff7f3a0790>
+  when_ready: <function WhenReady.when_ready at 0xffff7f3a08b0>
+  pre_fork: <function Prefork.pre_fork at 0xffff7f3a09d0>
+  post_fork: <function Postfork.post_fork at 0xffff7f3a0af0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0xffff7f3a0c10>
+  worker_int: <function WorkerInt.worker_int at 0xffff7f3a0d30>
+  worker_abort: <function WorkerAbort.worker_abort at 0xffff7f3a0e50>
+  pre_exec: <function PreExec.pre_exec at 0xffff7f3a0f70>
+  pre_request: <function PreRequest.pre_request at 0xffff7f3a1090>
+  post_request: <function PostRequest.post_request at 0xffff7f3a1120>
+  child_exit: <function ChildExit.child_exit at 0xffff7f3a1240>
+  worker_exit: <function WorkerExit.worker_exit at 0xffff7f3a1360>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0xffff7f3a1480>
+  on_exit: <function OnExit.on_exit at 0xffff7f3a15a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-03-20 23:29:59 +0800] [2452] [INFO] Starting gunicorn 20.1.0
+[2023-03-20 23:29:59 +0800] [2452] [DEBUG] Arbiter booted
+[2023-03-20 23:29:59 +0800] [2452] [INFO] Listening at: unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock (2452)
+[2023-03-20 23:29:59 +0800] [2452] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-03-20 23:29:59 +0800] [2453] [INFO] Booting worker with pid: 2453
+[2023-03-20 23:29:59 +0800] [2452] [DEBUG] 1 workers
+[2023-03-20 23:30:02 +0800] [2453] [INFO] Started server process [2453]
+[2023-03-20 23:30:02 +0800] [2453] [INFO] Waiting for application startup.
+[2023-03-20 23:30:02 +0800] [2453] [INFO] Application startup complete.
+[2023-03-20 23:30:20 +0800] [2452] [INFO] Handling signal: int
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Shutting down
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Waiting for application shutdown.
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Application shutdown complete.
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Finished server process [2453]
+[2023-03-20 23:30:20 +0800] [2453] [INFO] Worker exiting (pid: 2453)
+[2023-03-20 23:32:49 +0800] [2591] [DEBUG] Current configuration:
+  config: gunicorn_cfg.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Pi_FastAPI_Server
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/Pi_FastAPI_Server/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/Pi_FastAPI_Server/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: fast:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0xffffa7120670>
+  on_reload: <function OnReload.on_reload at 0xffffa7120790>
+  when_ready: <function WhenReady.when_ready at 0xffffa71208b0>
+  pre_fork: <function Prefork.pre_fork at 0xffffa71209d0>
+  post_fork: <function Postfork.post_fork at 0xffffa7120af0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0xffffa7120c10>
+  worker_int: <function WorkerInt.worker_int at 0xffffa7120d30>
+  worker_abort: <function WorkerAbort.worker_abort at 0xffffa7120e50>
+  pre_exec: <function PreExec.pre_exec at 0xffffa7120f70>
+  pre_request: <function PreRequest.pre_request at 0xffffa7121090>
+  post_request: <function PostRequest.post_request at 0xffffa7121120>
+  child_exit: <function ChildExit.child_exit at 0xffffa7121240>
+  worker_exit: <function WorkerExit.worker_exit at 0xffffa7121360>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0xffffa7121480>
+  on_exit: <function OnExit.on_exit at 0xffffa71215a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-03-20 23:32:49 +0800] [2591] [INFO] Starting gunicorn 20.1.0
+[2023-03-20 23:32:49 +0800] [2591] [DEBUG] Arbiter booted
+[2023-03-20 23:32:49 +0800] [2591] [INFO] Listening at: unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock (2591)
+[2023-03-20 23:32:49 +0800] [2591] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-03-20 23:32:49 +0800] [2592] [INFO] Booting worker with pid: 2592
+[2023-03-20 23:32:49 +0800] [2591] [DEBUG] 1 workers
+[2023-03-20 23:32:52 +0800] [2592] [INFO] Started server process [2592]
+[2023-03-20 23:32:52 +0800] [2592] [INFO] Waiting for application startup.
+[2023-03-20 23:32:52 +0800] [2592] [INFO] Application startup complete.
+[2023-03-20 23:41:12 +0800] [2452] [WARNING] Worker with pid 2453 was terminated due to signal 9
+[2023-03-20 23:41:12 +0800] [2452] [INFO] Shutting down: Master
+[2023-03-20 23:41:13 +0800] [2591] [INFO] Handling signal: term
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Shutting down
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Waiting for application shutdown.
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Application shutdown complete.
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Finished server process [2592]
+[2023-03-20 23:41:13 +0800] [2592] [INFO] Worker exiting (pid: 2592)
+[2023-03-20 23:41:43 +0800] [2591] [INFO] Shutting down: Master
+[2023-03-20 22:35:12 +0800] [1536] [DEBUG] Current configuration:
+  config: gunicorn_cfg.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Pi_FastAPI_Server
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/Pi_FastAPI_Server/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/Pi_FastAPI_Server/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: fast:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0xffff88fd0670>
+  on_reload: <function OnReload.on_reload at 0xffff88fd0790>
+  when_ready: <function WhenReady.when_ready at 0xffff88fd08b0>
+  pre_fork: <function Prefork.pre_fork at 0xffff88fd09d0>
+  post_fork: <function Postfork.post_fork at 0xffff88fd0af0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0xffff88fd0c10>
+  worker_int: <function WorkerInt.worker_int at 0xffff88fd0d30>
+  worker_abort: <function WorkerAbort.worker_abort at 0xffff88fd0e50>
+  pre_exec: <function PreExec.pre_exec at 0xffff88fd0f70>
+  pre_request: <function PreRequest.pre_request at 0xffff88fd1090>
+  post_request: <function PostRequest.post_request at 0xffff88fd1120>
+  child_exit: <function ChildExit.child_exit at 0xffff88fd1240>
+  worker_exit: <function WorkerExit.worker_exit at 0xffff88fd1360>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0xffff88fd1480>
+  on_exit: <function OnExit.on_exit at 0xffff88fd15a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-03-20 22:35:12 +0800] [1536] [INFO] Starting gunicorn 20.1.0
+[2023-03-20 22:35:12 +0800] [1536] [DEBUG] Arbiter booted
+[2023-03-20 22:35:12 +0800] [1536] [INFO] Listening at: unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock (1536)
+[2023-03-20 22:35:12 +0800] [1536] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-03-20 22:35:12 +0800] [1537] [INFO] Booting worker with pid: 1537
+[2023-03-20 22:35:12 +0800] [1536] [DEBUG] 1 workers
+[2023-03-20 22:35:16 +0800] [1537] [INFO] Started server process [1537]
+[2023-03-20 22:35:16 +0800] [1537] [INFO] Waiting for application startup.
+[2023-03-20 22:35:16 +0800] [1537] [INFO] Application startup complete.
+[2023-03-20 22:41:01 +0800] [1536] [INFO] Handling signal: term
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Shutting down
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Waiting for application shutdown.
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Application shutdown complete.
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Finished server process [1537]
+[2023-03-20 22:41:01 +0800] [1537] [INFO] Worker exiting (pid: 1537)
+[2023-03-20 22:41:31 +0800] [1536] [INFO] Shutting down: Master
+[2023-03-20 22:41:32 +0800] [1679] [DEBUG] Current configuration:
+  config: gunicorn_cfg.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock']
+  backlog: 2048
+  workers: 1
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Pi_FastAPI_Server
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/ubuntu/Pi_FastAPI_Server/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/Pi_FastAPI_Server/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: fast:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0xffff7f080670>
+  on_reload: <function OnReload.on_reload at 0xffff7f080790>
+  when_ready: <function WhenReady.when_ready at 0xffff7f0808b0>
+  pre_fork: <function Prefork.pre_fork at 0xffff7f0809d0>
+  post_fork: <function Postfork.post_fork at 0xffff7f080af0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0xffff7f080c10>
+  worker_int: <function WorkerInt.worker_int at 0xffff7f080d30>
+  worker_abort: <function WorkerAbort.worker_abort at 0xffff7f080e50>
+  pre_exec: <function PreExec.pre_exec at 0xffff7f080f70>
+  pre_request: <function PreRequest.pre_request at 0xffff7f081090>
+  post_request: <function PostRequest.post_request at 0xffff7f081120>
+  child_exit: <function ChildExit.child_exit at 0xffff7f081240>
+  worker_exit: <function WorkerExit.worker_exit at 0xffff7f081360>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0xffff7f081480>
+  on_exit: <function OnExit.on_exit at 0xffff7f0815a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2023-03-20 22:41:32 +0800] [1679] [INFO] Starting gunicorn 20.1.0
+[2023-03-20 22:41:32 +0800] [1679] [DEBUG] Arbiter booted
+[2023-03-20 22:41:32 +0800] [1679] [INFO] Listening at: unix:/home/ubuntu/Pi_FastAPI_Server/gunicorn.sock (1679)
+[2023-03-20 22:41:32 +0800] [1679] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2023-03-20 22:41:33 +0800] [1680] [INFO] Booting worker with pid: 1680
+[2023-03-20 22:41:33 +0800] [1679] [DEBUG] 1 workers
+[2023-03-20 22:41:36 +0800] [1680] [INFO] Started server process [1680]
+[2023-03-20 22:41:36 +0800] [1680] [INFO] Waiting for application startup.
+[2023-03-20 22:41:36 +0800] [1680] [INFO] Application startup complete.
+[2023-03-20 22:42:58 +0800] [1679] [INFO] Handling signal: term
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Shutting down
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Waiting for application shutdown.
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Application shutdown complete.
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Finished server process [1680]
+[2023-03-20 22:42:58 +0800] [1680] [INFO] Worker exiting (pid: 1680)
+[2023-03-20 22:43:28 +0800] [1679] [INFO] Shutting down: Master

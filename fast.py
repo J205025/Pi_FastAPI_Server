@@ -417,6 +417,7 @@ def downPodcastFile_sh():
     Ndays_ago.strftime("%Y-%m-%d")
     opt = getpodcast.options(
     root_dir = '/home/ubuntu/Music/podcast',
+    #root_dir = '/media/usb1/podcast',
     date_from = str(Ndays_ago),
     deleteold = True,
     run = True)
@@ -445,7 +446,7 @@ def process_monitor(p):
 #
 #----------------------------------------------------------------------------
 
-if(True):
+if(False):
     GPIO.setmode(GPIO.BOARD)
    # gpio binary  
     GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -515,9 +516,9 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"])
 templates = Jinja2Templates(directory="./templates")
 app.mount("/static", StaticFiles(directory="./static"), name="static")
 
-@app.get("/media/usb1/{file_path:path}")
+@app.get("/home/ubuntu/Music/{file_path:path}")
 def read_file(file_path: str):
-    file_path = os.path.realpath(os.path.join("/media/usb1/", file_path))
+    file_path = os.path.realpath(os.path.join("/home/ubuntu/Music/", file_path))
     return FileResponse(file_path)
 
 #-----------------------APSchedule cron job---------------
@@ -934,12 +935,11 @@ async def setCron(request: Request):
     print("cronTimeHour: "+str(__cronTimeHour__))
     print("cronTimeMin: "+str(__cronTimeMin__))
     if __cronStatus__ == False:
-        scheduler.remove_job('my_task')
+        scheduler.remove_job('my_task2')
         __cronStatus__ = False
         print("scheduler job removed")
     else:
-        #scheduler.add_job(id='my_task', func=handleCronPlayPi, trigger='cron', hour=__cronTimeHour__, minute=__cronTimeMin__)
-        scheduler.add_job(handleCronPlayPi,CronTrigger.from_crontab('0 0 * * *'),id='my_cron_job')
+        scheduler.add_job(handleCronPlayPi,CronTrigger.from_crontab('0 0 * * *'),id='my_task2')
         __cronStatus__ = True
         print("scheduler job added")
     return JSONResponse({
@@ -957,10 +957,10 @@ async def setCronSong(request: Request):
         "cronIndexPi" : __cronIndexPi__
          })
 
-#@scheduler.add_job('cron', id='myjobb', day='*', hour='06', minute='00', second='00')
-#async def myjobb():
-#    downPodcastFile_sh2()
-#    print("myDownPodcastFileJob executed")
+@scheduler.scheduled_job('cron',id='myjobb',minute=25,hour=15)
+async def myjobb():
+    downPodcastFile_sh2()
+    print("myDownPodcastFileJob executed")
 
 if __name__ == '__main__':
-    uvicorn.run("fast:app", port=3000, reload=True)
+    uvicorn.run(app)

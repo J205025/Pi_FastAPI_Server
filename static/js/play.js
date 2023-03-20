@@ -24,7 +24,8 @@ const vm = createApp({
                modfileList : [],
                dir :"./static/assets/",
                //due to static protection of FastAPI, I use  dir2  to diretly point the media files that not in /static/ folder.
-               dir2 :"/media/usb1/",
+               //dir2 :"/media/usb1/",
+               dir2 :"/home/ubuntu/Music/",
                filePc: '',
                filePi : '',
                cronFilePi : '',
