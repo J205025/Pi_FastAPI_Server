@@ -13,5 +13,5 @@ itempelates
 
 
 
-uvicorn main:app --host 192.168.1.192 --port 2000
+uvicorn fast:app --host 192.168.1.192 --port 3000
 

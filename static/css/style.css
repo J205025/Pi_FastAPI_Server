@@ -11,10 +11,10 @@ body {
   }
 .title{
   font-size: 1.5em; 
-  color:rgb(9, 20, 230); 
+  color:rgb(31, 44, 158); 
  } 
 .banner-container{
-  color: hsla(219, 61%, 57%, 0.5);
+  color: hsla(22, 85%, 43%, 0.5);
   width: 100vw;
   display: flex;
   flex-direction:column;
@@ -30,6 +30,7 @@ body {
 .section-container{
   justify-content: center;
   align-items: center;  
+  color:rgb(108, 81, 204);
  }
  
 .section{
@@ -52,12 +53,12 @@ body {
 .key-button {
     box-sizing: border-box;
     line-height: 80px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     width: 25%;
     color: #555;
     cursor: pointer;
-    margin: 0 8px;
+    margin: 0 6px;
     height: 80px;
     border-color: #f2f2f2;
     border-style: solid;
@@ -128,4 +129,11 @@ body {
     display: inline-block;
     transition: box-shadow 0.3s ease, transform 0.15s ease;
     box-shadow: 0 0 1px #888, 0 1px 0 #fff, 0 6px 0 #C0C0C0, 0 8px 17px rgba(68, 68, 68, 0.4), 2px 1px 4px rgba(68, 68, 68, 0.25), -2px 1px 4px rgba(68, 68, 68, 0.25), 0 9px 16px rgba(68, 68, 68, 0.1);
+  }
+  .audio-player-container{
+  display:flex;
+  width: 80vw;
+  justify-content: center;    
+  align-items: center;
+  text-align:center;
   }
